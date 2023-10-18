@@ -1,12 +1,16 @@
-import Header from "../components/Header";
+import { useParams } from "react-router-dom";
+import Header from "../components/Header.js";
 import { MainContainer } from "../style";
 
 function ProfilePage() {
 
+  const {name} = useParams()
+  console.log(name)
+
   return (
     <MainContainer>
       <Header />
-      <h1>Página acerca do usuário</h1>
+      <h1>Página acerca de {name}</h1>
     </MainContainer>
   );
 }

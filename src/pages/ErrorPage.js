@@ -1,13 +1,13 @@
 import Header from "../components/Header.js";
 import { MainContainer} from "../style";
 
-function HomePage() {
+function ErrorPage() {
   return (
     <MainContainer>
       <Header/>
-      <h1>Página Inicial</h1>
+      <h1>Página de Error</h1>
     </MainContainer>
   );
 }
 
-export default HomePage;
+export default ErrorPage;
